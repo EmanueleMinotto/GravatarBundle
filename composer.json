@@ -1,0 +1,30 @@
+{
+    "authors": [
+        {
+            "email": "minottoemanuele@gmail.com",
+            "name": "Emanuele Minotto"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "EmanueleMinotto\\GravatarBundle\\": "."
+        }
+    },
+    "description": "Symfony 2 Bundle for the Gravatar library",
+    "keywords": [
+        "bundle",
+        "gravatar",
+        "symfony",
+        "twig"
+    ],
+    "license": "MIT",
+    "name": "emanueleminotto/gravatar-bundle",
+    "require": {
+        "emanueleminotto/gravatar": "~1.1",
+        "guzzlehttp/guzzle": "~5.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.5",
+        "symfony/symfony": "~2.6"
+    }
+}

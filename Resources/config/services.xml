@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<container xmlns="http://symfony.com/schema/dic/services" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+    <parameters>
+        <parameter key="gravatar.class">EmanueleMinotto\Gravatar\Client</parameter>
+        <parameter key="gravatar.twig.extension.class">EmanueleMinotto\Gravatar\Twig\GravatarExtension</parameter>
+    </parameters>
+    <services>
+        <service class="%gravatar.class%" id="gravatar">
+            <argument id="gravatar.http_client.default" type="service"/>
+        </service>
+        <service class="%gravatar.twig.extension.class%" id="gravatar.twig.extension" public="false">
+            <argument id="gravatar" type="service"/>
+            <tag name="twig.extension"/>
+        </service>
+        <service class="GuzzleHttp\Client" id="gravatar.http_client.default" public="false"/>
+    </services>
+</container>

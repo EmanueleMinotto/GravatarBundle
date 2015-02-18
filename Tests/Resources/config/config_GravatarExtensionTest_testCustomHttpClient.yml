@@ -1,0 +1,11 @@
+imports:
+- resource: config.yml
+
+gravatar:
+  http_client: 'test.http_client'
+
+services:
+  test.http_client:
+    class: GuzzleHttp\Client
+    arguments:
+    - { base_url: 'http://www.example.com/' }
