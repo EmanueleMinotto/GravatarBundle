@@ -6,6 +6,10 @@ php:
 - 5.6
 - hhvm
 
+env:
+  global:
+    secure: dhGcHUmCy67e2Qs20mCccmjoL7ernBv/hqkOcMdtBfnH3kq88oM0tvgf0t2hpU7wI2dC+/imvyp0HVe3u63fwNr8Mu6XlQNbAQt2CkC7HyrO51O+OvShd8QcqRkkmvJpD1OTCCtO0vijfIblix+8TxZ4clTT4H7FIKuDVdWotsw=
+
 before_script:
 - composer require satooshi/php-coveralls:~0.6 --dev
 

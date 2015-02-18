@@ -1,9 +1,10 @@
 Gravatar Bundle
 ===============
 
-[![Build Status](https://img.shields.io/travis/EmanueleMinotto/Gravatar.svg?style=flat)](https://travis-ci.org/EmanueleMinotto/Gravatar)
-[![Coverage Status](https://img.shields.io/coveralls/EmanueleMinotto/Gravatar.svg?style=flat)](https://coveralls.io/r/EmanueleMinotto/Gravatar)
-[![Scrutinizer Code Quality](https://img.shields.io/scrutinizer/g/EmanueleMinotto/Gravatar.svg?style=flat)](https://scrutinizer-ci.com/g/EmanueleMinotto/Gravatar/)
+[![Build Status](https://img.shields.io/travis/EmanueleMinotto/GravatarBundle.svg?style=flat)](https://travis-ci.org/EmanueleMinotto/GravatarBundle)
+[![SensioLabs Insight](https://img.shields.io/sensiolabs/i/196fce1e-5333-45fb-8338-8d414ede8167.svg?style=flat)](https://insight.sensiolabs.com/projects/196fce1e-5333-45fb-8338-8d414ede8167)
+[![Coverage Status](https://img.shields.io/coveralls/EmanueleMinotto/GravatarBundle.svg?style=flat)](https://coveralls.io/r/EmanueleMinotto/GravatarBundle)
+[![Scrutinizer Code Quality](https://img.shields.io/scrutinizer/g/EmanueleMinotto/GravatarBundle.svg?style=flat)](https://scrutinizer-ci.com/g/EmanueleMinotto/GravatarBundle/)
 [![Total Downloads](https://img.shields.io/packagist/dt/emanueleminotto/gravatar-bundle.svg?style=flat)](https://packagist.org/packages/emanueleminotto/gravatar-bundle)
 
 Bundle for Symfony 2 providing the [Gravatar](https://github.com/EmanueleMinotto/Gravatar) library.
