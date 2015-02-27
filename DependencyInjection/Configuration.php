@@ -22,6 +22,7 @@ class Configuration implements ConfigurationInterface
         $treeBuilder = new TreeBuilder();
         $rootNode = $treeBuilder->root('gravatar');
 
+        // @codingStandardsIgnoreStart
         $rootNode
             ->addDefaultsIfNotSet()
             ->children()
@@ -31,6 +32,7 @@ class Configuration implements ConfigurationInterface
                 ->end()
             ->end()
         ;
+        // @codingStandardsIgnoreEnd
 
         return $treeBuilder;
     }

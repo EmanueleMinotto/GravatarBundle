@@ -39,7 +39,8 @@ class GravatarExtension extends Extension
         // if defined override the gravatar.http_client parameter
         // with a defined Guzzle 5 service
         if ($configs['http_client']) {
-            $container->getDefinition('gravatar')->setArguments([
+            $definition = $container->getDefinition('gravatar');
+            $definition->setArguments([
                 new Reference($configs['http_client']),
             ]);
         }

@@ -11,7 +11,11 @@ use PHPUnit_Framework_TestCase;
 class GravatarExtensionTest extends PHPUnit_Framework_TestCase
 {
     /**
+     * Test application with default HTTP client.
+     *
      * @covers ::load
+     *
+     * @return void
      */
     public function testDefaultService()
     {
@@ -25,7 +29,11 @@ class GravatarExtensionTest extends PHPUnit_Framework_TestCase
     }
 
     /**
+     * Test application with custom HTTP client.
+     *
      * @covers ::load
+     *
+     * @return void
      */
     public function testCustomHttpClient()
     {
@@ -37,6 +45,9 @@ class GravatarExtensionTest extends PHPUnit_Framework_TestCase
         $gravatar = $container->get('gravatar');
         $httpClient = $container->get('test.http_client');
 
-        $this->assertSame($httpClient, $gravatar->getHttpClient());
+        $injectedHttpClient = $gravatar->getHttpClient();
+
+        $this->assertSame($httpClient, $injectedHttpClient);
+        $this->assertNotEmpty($injectedHttpClient->getBaseUrl());
     }
 }
