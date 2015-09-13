@@ -30,8 +30,7 @@ class Configuration implements ConfigurationInterface
                     ->defaultNull()
                     ->info('Guzzle 5 Client service ID')
                 ->end()
-            ->end()
-        ;
+            ->end();
         // @codingStandardsIgnoreEnd
 
         return $treeBuilder;
